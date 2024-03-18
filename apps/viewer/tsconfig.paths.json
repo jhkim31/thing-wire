@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {            
+            "@lib/*" : ["lib/*"],
+            "@ajv" : ["config/ajv"],
+            "@api": ["api/AxiosInstance"],
+            "@components/*": ["components/*"],
+            "@handler/*": ["handler/*"],
+            "@redux/*": ["redux/*"],
+            "@styles/*": ["styles/*"],
+            "@config" : ["config"],
+            "@pages/*" : ["pages/*"]
+        }
+    }
+}

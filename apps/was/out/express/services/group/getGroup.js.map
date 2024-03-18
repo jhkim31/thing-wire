@@ -1,0 +1,1 @@
+{"version":3,"file":"getGroup.js","sourceRoot":"","sources":["../../../../src/express/services/group/getGroup.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,wDAAmC;AACnC,uCAAyC;AAGzC,SAA8B,QAAQ,CAAC,OAAe;;QAClD,MAAM,KAAK,GAAG,MAAM,eAAQ,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC;QAC/C,MAAM,SAAS,GAAW,IAAA,oBAAW,EAAC,KAAK,CAAC,CAAC;QAC7C,OAAO,SAAS,CAAC;IACrB,CAAC;CAAA;AAJD,2BAIC"}

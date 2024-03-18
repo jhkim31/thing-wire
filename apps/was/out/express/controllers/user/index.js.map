@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/express/controllers/user/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAEA,sFAA8D;AAE9D;;;;;;GAMG;AACH,MAAqB,cAAc;IAC/B,MAAM,CAAO,sBAAsB,CAAC,GAAY,EAAE,GAAa,EAAE,IAAkB;;YAC/E,MAAM,IAAA,gCAAsB,EAAC,GAAG,EAAE,GAAG,EAAE,IAAI,CAAC,CAAC;QACjD,CAAC;KAAA;CACJ;AAJD,iCAIC"}

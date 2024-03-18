@@ -1,0 +1,9 @@
+$moduleName: "GroupDeviceDataTable";
+
+.#{$moduleName}-dataOddRow {    
+    display: flex;
+    flex-direction: row;
+    div:not(.#{$moduleName}-dataCellRowHeader) {
+        background: blue;
+    }
+}

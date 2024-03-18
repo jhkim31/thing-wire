@@ -1,0 +1,13 @@
+{
+    "name": "shared",
+    "version": "1.0.0",
+    "description": "thing-wire shared package",
+    "main": "index.js",
+    "author": "jhkim31",
+    "license": "ISC",
+    "dependencies": {
+        "@types/jsonwebtoken": "^9.0.3",
+        "ajv": "^8.12.0",
+        "jsonwebtoken": "^9.0.2"
+    }
+}

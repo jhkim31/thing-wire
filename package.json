@@ -1,0 +1,23 @@
+{
+  "name": "thing-wire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "was:dev": "cd apps/was && npm run dev",
+    "device-manager:dev": "cd apps/device-manager && npm run dev",
+    "dev":  "concurrently \"npm run was:dev\" \"npm run device-manager:dev\""
+  },
+  "workspaces": [
+    "apps/*",
+    "shared"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

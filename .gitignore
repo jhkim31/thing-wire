@@ -1,0 +1,21 @@
+## PROJECT
+**/.env
+
+## NODE
+**/node_modules
+
+## PYTHON
+**/.venv
+
+## DEVELOPMENT
+**/.vscode
+**/.DS_Store
+**/public/
+
+## CERT
+**/*.cert
+**/*.key
+
+
+## LOG
+**/*.LOG

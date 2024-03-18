@@ -1,0 +1,1 @@
+{"version":3,"file":"deleteOrg.js","sourceRoot":"","sources":["../../../../src/express/services/organization/deleteOrg.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,sEAAwC;AAExC,SAA8B,SAAS,CAAC,MAAc,EAAE,KAAa;;QACjE,MAAM,MAAM,GAAG,MAAM,sBAAM,CAAC,SAAS,CAAC,MAAM,EAAE,KAAK,CAAC,CAAC;QACrD,OAAO,MAAM,CAAC;IAClB,CAAC;CAAA;AAHD,4BAGC"}

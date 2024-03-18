@@ -1,0 +1,1 @@
+{"version":3,"file":"postComment.js","sourceRoot":"","sources":["../../../../src/express/services/device/postComment.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,0DAAqC;AAGrC,SAA8B,WAAW,CAAC,QAAgB,EAAE,OAAe;;QACvE,MAAM,MAAM,GAAG,MAAM,gBAAS,CAAC,WAAW,CAAC,QAAQ,EAAE,OAAO,CAAC,CAAC;QAC9D,OAAO,MAAM,CAAC;IAClB,CAAC;CAAA;AAHD,8BAGC"}

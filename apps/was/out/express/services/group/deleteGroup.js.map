@@ -1,0 +1,1 @@
+{"version":3,"file":"deleteGroup.js","sourceRoot":"","sources":["../../../../src/express/services/group/deleteGroup.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,wDAAmC;AAEnC,SAA8B,WAAW,CAAC,KAAa,EAAE,OAAe;;QACpE,MAAM,MAAM,GAAG,MAAM,eAAQ,CAAC,WAAW,CAAC,KAAK,EAAE,OAAO,CAAC,CAAC;QAC1D,OAAO,MAAM,CAAC;IAClB,CAAC;CAAA;AAHD,8BAGC"}

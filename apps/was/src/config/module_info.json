@@ -1,0 +1,158 @@
+{
+    "admin": {
+        "col": 1,
+        "row": 1,
+        "components": [
+            {
+                "componentName": "admin/AllDeviceList"
+            }
+        ]
+    },
+    "main": {
+        "col": 1,
+        "row": 1,
+        "components": [
+            {
+                "componentName": "main/OrgList"
+            }
+        ]
+    },
+    "organization": {
+        "row": 7,
+        "col": 4,
+        "components": [
+            {
+                "componentName": "interaction/org/main/GroupList",
+                "rowSpan": 7
+            },
+            {
+                "componentName": "interaction/org/main/DeviceList",
+                "rowSpan": 7
+            },
+            {
+                "componentName": "interaction/org/main/SelectDynamicView",
+                "colSpan": 2
+            },
+            {
+                "componentName": "interaction/org/main/DynamicView",
+                "rowSpan": 6,
+                "colSpan": 2
+            }
+        ]
+    },
+    "group": {
+        "col": 2,
+        "row": 3,
+        "components": [
+            {
+                "componentName": "group/DeviceList",
+                "colSpan": 2
+            },
+            {
+                "componentName": "group/DeviceDataTable",
+                "colSpan": 2,
+                "rowSpan": 2
+            }
+        ]
+    },
+    "device": {
+        "row": 2,
+        "col": 2,
+        "components": [                        
+            {
+                "componentName": "device/DataChart_Params"
+            },
+            {
+                "componentName": "device/Terminal_Params",
+                "rowSpan": 2
+            },
+            {
+                "componentName": "device/Command"
+            }             
+        ]
+    },
+    "orgDetailListPage": {
+        "row": 1,
+        "col": 1,
+        "components": [
+            {
+                "componentName": "org/DetailList"
+            }
+        ]
+    },
+    "orgGroupDetailListPage": {
+        "row": 1,
+        "col": 1,
+        "components": [
+            {
+                "componentName": "org/GroupDetailList"
+            }
+        ]
+    },
+    "orgDevicesPage": {
+        "row": 1,
+        "col": 1,
+        "components": [
+            {
+                "componentName": "org/DeviceDetailList"
+            }
+        ]
+    },
+    "orgDashboardPage": {
+        "col": 2,
+        "row": 2,
+        "components": [
+            {
+                "componentName": "org/GroupList",
+                "colSpan": 2                
+            },
+            {
+                "componentName": "org/DeviceList"
+            },            
+            {
+                "componentName": "org/MemberList"                
+            }            
+        ]
+    },
+    "orgConfigFilePage": {
+        "col": 3,
+        "row": 2,
+        "components": [
+            {
+                "componentName": "interaction/org/configfile/ConfigFileEditor",
+                "rowSpan": 2,
+                "colSpan": 2
+            },
+            {
+                "componentName": "interaction/org/configfile/ConfigFileList"                
+            },            
+            {
+                "componentName": "interaction/org/configfile/ConfigFileHistory"                
+            }
+            
+            
+        ]
+    },
+    "deviceConfigFilePage": {
+        "col" : 2,
+        "row" : 1,
+        "components" : [
+            {
+                "componentName": "interaction/device/configfile/ConfigFileEditor"                
+            },
+            {
+                "componentName": "interaction/device/configfile/ConfigFileHistory"                
+            }
+        ]
+    },
+    "groupConfigFilePage": {
+        "col" : 2,
+        "row" : 1,
+        "components" : [
+            {
+                "componentName": "interaction/group/configfile/ConfigFileEditor"                
+            }
+            
+        ]
+    }
+}

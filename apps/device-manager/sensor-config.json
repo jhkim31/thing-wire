@@ -1,0 +1,181 @@
+{
+    "name": "sensorConfig",
+    "version": "4.1.3",
+    "lastModified": "2023-07-05T17:38:00",
+    "sensorNode": {
+        "verion": {
+            "hw": "4.1.1",
+            "sw": "4.1.1"
+        },
+        "serviceId": "dev.keti.envsensor-v1",
+        "metric": "keti-f4",
+        "defaultTags": {},
+        "device": {
+            "hdmi": 0,
+            "mainDisplay": {
+                "enable": 1,
+                "rotation": 1,
+                "defaultScreen": "asummary",
+                "defaultBright": 30,
+                "autoBright": {
+                    "enable": 1,
+                    "min": 10,
+                    "max": 100
+                },
+                "nightMode": {
+                    "enable": 1,
+                    "startTime": "18:00:00",
+                    "endTime": "07:00:00",
+                    "bright": 10
+                },
+                "style": 1
+            },
+            "subDisplay": {
+                "enable": 1,
+                "defaultBright": 30,
+                "autoBright": {
+                    "enable": 1,
+                    "min": 20,
+                    "max": 100
+                },
+                "nightMode": {
+                    "enable": 1,
+                    "startTime": "18:00:00",
+                    "endTime": "07:00:00",
+                    "bright": 20
+                },
+                "style": 1
+            },
+            "restart": {
+                "enable": 0,
+                "time": "00:00:00"
+            },
+            "keepalive": {
+                "reboot": 1
+            }
+        },
+        "sensors": [
+            {
+                "name": "temperature",
+                "enable": 1
+            },
+            {
+                "name": "humidity",
+                "enable": 1
+            },
+            {
+                "name": "dewpoint",
+                "enable": 1
+            },
+            {
+                "name": "lx",
+                "enable": 1
+            },
+            {
+                "name": "sound",
+                "enable": 0
+            },
+            {
+                "name": "co2",
+                "enable": 1
+            },
+            {
+                "name": "hcho",
+                "enable": 1
+            },
+            {
+                "name": "dust",
+                "enable": 1
+            }
+        ],
+        "dataSource": {
+            "type": "sqlite",
+            "path": "/sensor/values/values.db"
+        },
+        "services": {
+            "envsensor-data-aggregator": {
+                "enable": 1,
+                "version": "4.0.1",
+                "ip": "0.0.0.0",
+                "port": 26000
+            },
+            "envsensor-data-forwarder": {
+                "enable": 1,
+                "version": "4.0.1",
+                "servers": [
+                    {
+                        "name": "ingress-router2",
+                        "enable": 1,
+                        "protocol": "https",
+                        "address": "https://192.168.107.2:30043/v1/sensors",
+                        "certVerification": false,
+                        "ciphers": "ECDHE-ECDSA-ARIA128-GCM-SHA256"
+                    },
+                    {
+                        "name": "mqtt",
+                        "enable": 0,
+                        "protocol": "mqtt",
+                        "address": "{IP}:{PORT}",
+                        "channel": "envsensor/test"
+                    }
+                ]
+            },
+            "envsensor-modbus-server": {
+                "enable": 1,
+                "version": "4.0.1",
+                "maxElapse": 300000,
+                "servers": [
+                    {
+                        "name": "modbus-tcp",
+                        "enable": 1,
+                        "port": 502,
+                        "protocol": "modbus-tcp"
+                    },
+                    {
+                        "name": "modbus-udp",
+                        "enable": 1,
+                        "port": 503,
+                        "protocol": "modbus-udp"
+                    }
+                ]
+            },
+            "envsensor-wot-server": {
+                "enable": 1,
+                "version": "4.0.1",
+                "port": 26080,
+                "maxElapse": 300000,
+                "certVerification": false
+            },
+            "envsensor-discovery-service": {
+                "enable": 1,
+                "version": "4.0.1",
+                "wot": {
+                    "tdPath": "/keti-iot-environmental-sensor",
+                    "serviceType": "_wot._tcp.local",
+                    "serviceNamePrefix": "keti-wot-"
+                }
+            },
+            "envsensor-thingwire-agent": {
+                "enable": 1,
+                "version": "4.0.1",
+                "ip": "0.0.0.0",
+                "port": 26050,
+                "debug": 1
+            },
+            "envsensor-thingwire-proxy": {
+                "enable": 1,
+                "version": "4.0.1",
+                "servers": [
+                    {
+                        "name": "thingwire-device-manager",
+                        "enable": 1,
+                        "maxInterval": 10000,
+                        "protocol": "https",
+                        "address": "https://leda.energyiotlab.com:38084",
+                        "certVerification": false
+                    }
+                ]
+            }
+        }
+    }
+}
